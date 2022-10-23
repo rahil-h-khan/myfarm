@@ -127,8 +127,7 @@ const server = http.createServer((req, res) => {
     });
     const product = dataObj[query.id];
     const output = replaceTemplate(tempProduct, product);
-    
-    res.end(output);]
+    res.end(output);
 
     // API
   } else if (pathname === '/api') {
